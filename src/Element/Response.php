@@ -54,6 +54,12 @@ class Response
         return $transaction ? $transaction->getMessage() : null;
     }
 
+    public function getCode()
+    {
+        $transaction = $this->getTransaction();
+        return $transaction ? $transaction->getCode() : null;
+    }
+
     public function getProcessingGuWid()
     {
         $transaction = $this->getTransaction();

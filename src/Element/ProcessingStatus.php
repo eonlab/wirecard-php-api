@@ -62,5 +62,10 @@ class ProcessingStatus
     {
         return $this->error ? $this->error->message : null;
     }
+
+    public function getCode()
+    {
+        return $this->error ? $this->error->number : null;
+    }
 }
  

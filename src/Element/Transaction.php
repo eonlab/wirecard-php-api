@@ -105,6 +105,11 @@ class Transaction
         return $this->processingStatus ? $this->processingStatus->getMessage() : null;
     }
 
+    public function getCode()
+    {
+        return $this->processingStatus ? $this->processingStatus->getCode() : null;
+    }
+
     public function getProcessingGuWid()
     {
         return $this->processingStatus ? $this->processingStatus->guWid : null;
