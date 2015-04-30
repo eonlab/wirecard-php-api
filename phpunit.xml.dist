@@ -11,11 +11,27 @@
         convertWarningsToExceptions = "true"
         processIsolation            = "false"
         stopOnFailure               = "false"
-        bootstrap                   = "tests/bootstrap.php"
+        bootstrap                   = "vendor/autoload.php"
         >
     <testsuites>
         <testsuite name="Test Suite">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory>./src</directory>
+            <exclude>
+                <directory>./build</directory>
+                <directory>./tests</directory>
+                <directory>./travis</directory>
+                <directory>./vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+    <groups>
+        <exclude>
+            <group>large</group>
+        </exclude>
+    </groups>
 </phpunit>
