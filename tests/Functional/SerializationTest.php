@@ -125,6 +125,7 @@ class SerializationTest extends FunctionalTestCase
             ['Wirecard\Element\Action\Purchase', 'createPurchaseJob', 'PURCHASE'],
             ['Wirecard\Element\Action\BookBack', 'createBookBackJob', 'BOOKBACK'],
             ['Wirecard\Element\Action\Query', 'createQueryJob', 'QUERY'],
+            ['Wirecard\Element\Action\Authorization', 'createAuthorizationJob', 'AUTHORIZATION'],
             ['Wirecard\Element\Action\Preauthorization', 'createPreauthorizationJob', 'PREAUTHORIZATION'],
             ['Wirecard\Element\Action\Capture', 'createCaptureJob', 'CAPTURE'],
             ['Wirecard\Element\Action\Reversal', 'createReversalJob', 'REVERSAL'],

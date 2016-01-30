@@ -19,6 +19,9 @@ Wirecard\Element\Job:
         query:
             serialized_name: FNC_CC_QUERY
             type: Wirecard\Element\Action\Query
+        authorization:
+            serialized_name: FNC_CC_AUTHORIZATION
+            type: Wirecard\Element\Action\Authorization
         preauthorization:
             serialized_name: FNC_CC_PREAUTHORIZATION
             type: Wirecard\Element\Action\Preauthorization

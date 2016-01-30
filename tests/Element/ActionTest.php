@@ -25,6 +25,7 @@ class ActionTest extends \PHPUnit_Framework_TestCase
             ['\Wirecard\Element\Action\Purchase'],
             ['\Wirecard\Element\Action\BookBack'],
             ['\Wirecard\Element\Action\Query'],
+            ['\Wirecard\Element\Action\Authorization'],
             ['\Wirecard\Element\Action\Preauthorization'],
             ['\Wirecard\Element\Action\Capture'],
             ['\Wirecard\Element\Action\Reversal'],

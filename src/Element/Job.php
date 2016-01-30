@@ -2,6 +2,7 @@
 
 namespace Wirecard\Element;
 
+use Wirecard\Element\Action\Authorization;
 use Wirecard\Element\Action\BookBack;
 use Wirecard\Element\Action\Capture;
 use Wirecard\Element\Action\EnrollmentCheck;
@@ -36,6 +37,11 @@ class Job
      * @var BookBack
      */
     public $bookBack;
+
+    /**
+     * @var Authorization
+     */
+    public $authorization;
 
     /**
      * @var Preauthorization
@@ -82,6 +88,14 @@ class Job
     {
         $job = new self($signature);
         $job->bookBack = $bookBack;
+
+        return $job;
+    }
+
+    public static function createAuthorizationJob($signature, Authorization $auth)
+    {
+        $job = new self($signature);
+        $job->authorization = $auth;
 
         return $job;
     }
