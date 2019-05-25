@@ -1,2 +1,11 @@
 Wirecard\Element\Action\EnrollmentCheck:
     xml_root_name: FNC_CC_ENROLLMENT_CHECK
+    properties:
+        type:
+            expose: true
+            xml_attribute: true
+            type: string
+        version:
+            expose: true
+            xml_attribute: true
+            type: string
