@@ -12,7 +12,7 @@ class EnrollmentCheck extends AbstractAction
     const VERSION_ONE = '1.0';
     const VERSION_TWO = '2.1';
 
-    public $payment = self::TYPE_PAYMENT;
+    public $type = self::TYPE_PAYMENT;
     public $version = self::VERSION_TWO;
 }
  
