@@ -4,6 +4,11 @@ namespace Wirecard\Element;
 
 class WireCard
 {
+    
+    const VERSION = '1.5';
+
+    public $version = self::VERSION;
+    
     /**
      * @var Request
      */
