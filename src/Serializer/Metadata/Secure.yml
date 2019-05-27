@@ -1,6 +1,9 @@
 Wirecard\Element\Secure:
     xml_root_name: THREE-D_SECURE
     properties:
+        version:
+            xml_attribute: true
+            type: string
         request:
             serialized_name: PAReq
             type: string
