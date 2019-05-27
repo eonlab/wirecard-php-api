@@ -3,6 +3,10 @@ Wirecard\Element\WireCard:
     xml_namespaces:
         xsi: http://www.w3.org/1999/XMLSchema-instance
     properties:
+        version:
+            expose: true
+            xml_attribute: true
+            type: string
         request:
             serialized_name: W_REQUEST
             type: "Wirecard\\Element\\Request"
