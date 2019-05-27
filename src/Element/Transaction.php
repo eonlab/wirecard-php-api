@@ -95,6 +95,11 @@ class Transaction
         return $this->secure ? $this->secure->url : null;
     }
 
+    public function getVersion()
+    {
+        return $this->secure ? $this->secure->version : null;
+    }
+    
     public function getToken()
     {
         return $this->secure ? $this->secure->request : null;
