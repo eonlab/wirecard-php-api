@@ -12,8 +12,9 @@ class Secure
 
     public $url;
     
-    public static function createVersion($version)
+    public static function createVersion($version, $url = null)
     {
+        $secure = new self($url);
         $secure->version = $version;
 
         return $secure;
