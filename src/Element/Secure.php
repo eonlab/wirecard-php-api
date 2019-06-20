@@ -4,12 +4,21 @@ namespace Wirecard\Element;
 
 class Secure
 {
+    public $version;
     
     public $request;
 
     public $response;
 
     public $url;
+    
+    public static function createVersion($version, $url = null)
+    {
+        $secure = new self($url);
+        $secure->version = $version;
+
+        return $secure;
+    }
     
     /**
      * @param $request
