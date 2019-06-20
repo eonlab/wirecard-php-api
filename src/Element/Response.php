@@ -36,6 +36,12 @@ class Response
         return $transaction ? $transaction->isRedirect() : false;
     }
 
+    public function getVersion()
+    {
+        $transaction = $this->getTransaction();
+        return $transaction ? $transaction->getVersion() : null;
+    }
+    
     public function getUrl()
     {
         $transaction = $this->getTransaction();
