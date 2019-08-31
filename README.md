@@ -1,5 +1,7 @@
 # [Wirecard AG](http://www.wirecard.com/) PHP API
 
+Updated to allow 3D-Secure 2
+
 ## Installation
 
 Configure your serializer:
