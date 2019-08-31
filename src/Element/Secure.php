@@ -12,14 +12,6 @@ class Secure
 
     public $url;
     
-    public static function createVersion($version, $url = null)
-    {
-        $secure = new self($url);
-        $secure->version = $version;
-
-        return $secure;
-    }
-    
     /**
      * @param $request
      * @param null $url
@@ -46,9 +38,10 @@ class Secure
         return $secure;
     }
 
-    private function __construct($url)
+    private function __construct($url, $version)
     {
         $this->url = $url;
+        $this->version = $version;
     }
 }
  
