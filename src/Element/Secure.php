@@ -30,9 +30,9 @@ class Secure
      * @param null $url
      * @return Secure
      */
-    public static function createResponse($response, $url = null)
+    public static function createResponse($response, $url = null, $version = null)
     {
-        $secure = new self($url);
+        $secure = new self($url, $version);
         $secure->response = $response;
 
         return $secure;
