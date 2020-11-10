@@ -1,5 +1,5 @@
 {
-    "name": "igaponov/wirecard-php-api",
+    "name": "eonlab/wirecard-php-api",
     "description": "Wirecard PHP API",
     "keywords": ["wirecard", "api"],
     "minimum-stability": "stable",
